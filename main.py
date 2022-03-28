@@ -1,9 +1,9 @@
-''' #Class, Inheritance, Encapsulation
+# Class, Inheritance, Encapsulation
 class Employee:
-    designation = "Software Engineer" #Class attribute
+    designation = "Software Engineer"  # Class attribute
 
     def __init__(self, name, age):
-        self.__gender = 'male' #Encapsulation
+        self.__gender = 'male'  # Encapsulation
         self.name = name
         self.age = age
 
@@ -17,6 +17,7 @@ class Employee:
 class Sub(Employee):
     def __init__(self, name, age):
         super().__init__(name, age)
+        # print(self.__gender) - Throws error
         print("Sub class is called")
 
     def tech(self, technology):
@@ -35,9 +36,8 @@ print(defg.work("day"))
 
 sub = Sub('Steve', 21)
 sub.tech('Python')
+
 '''
-
-
 # Polymorphism
 class Python:
     def __init__(self, name):
@@ -59,3 +59,4 @@ abc = Python('abc')
 print(abc.work())
 defg = Java('def')
 print(defg.work())
+'''
